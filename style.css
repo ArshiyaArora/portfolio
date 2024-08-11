@@ -7,11 +7,12 @@
 
   
 body{
-    color: black;
+    background-color: black;
+    color: white;
 }
 
 span.textGray{
-    color: #9CA3AF;
+    color: #0846b2;
 }
 
 .container{
@@ -31,7 +32,7 @@ nav{
 
 a{
     text-decoration: none;
-    color: #9CA3AF;
+    color: #0846b2;
 }
 
 nav ul li{
@@ -39,11 +40,11 @@ nav ul li{
     list-style: none;
     margin: 10px 10px;
     font-size: 17px;
-    
+    font-weight: 500;
 }
 
 nav ul li a:hover{
-    color:black;
+    color:white;
 }
 
 #heroSection{
@@ -79,27 +80,28 @@ hr{
 
 .talk{
     border-radius: 90px;
+    font-weight: 500;
     background-color: black;
-    color: white;
+    color:white;
+    border-color: #0846b2;
     cursor: pointer;
-    border:none;
-    padding: 10px 19px; /* Padding */
+    padding: 10px 19px;
     text-align: center;
     text-decoration: none;
     font-size: 18px;
 }
 
 .links{
-    background-color: white;
-    color:#9CA3AF;
-    border-color: #9CA3AF;
+    background-color: black;
+    color:white;
+    border-color: #0846b2;
     padding: 10px 19px;
     text-align: center;
     text-decoration: none;
     font-size: 18px;
     margin: 4px 15px; 
     border-radius: 12px;
-    box-shadow: 2px 2px 5px gray;
+    box-shadow: 2px 2px 5px #0846b2;
 }
 
 .links:hover {
@@ -152,11 +154,11 @@ hr{
 }
 
 .project-card {
-    border: 1px solid #9CA3AF;
+    border: 1px solid #0846b2;
     border-radius: 12px;
     padding: 20px;
     max-width: 690px;
-    background-color: white;
+    background-color: #3463b4;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 10px 10px;
   }
@@ -173,8 +175,9 @@ hr{
   .github-link {
     display: inline-block;
     margin-top: 15px;
-    color: #0070f3;
-    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    text-decoration: underline;
   }
   
   .github-link:hover {
@@ -183,7 +186,8 @@ hr{
 
  .projectName{
     font-size: 25px;
-    font-weight: 400;
+    color: black;
+    font-weight: 700;
  }
 
 
@@ -196,7 +200,6 @@ hr{
     align-items: center;
     flex-direction: column;
     padding: 50px 20px;
-    background-color: #f9f9f9;
 }
 
 /* Style for the row containing the heading and form */
@@ -229,16 +232,36 @@ textarea {
     resize: vertical;
 }
 
-#contact button {
-    background-color: black; /* Adjust color as needed */
-    color: white;
-    border: none;
-    padding: 12px 20px;
+#contact button{
+   
+    padding: 4px 15px;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
-    width: 100%;
-    max-width: 300px; /* Adjust width as needed */
-    margin-top: 10px;
+    font-size: 25px;
+    width: 200px;
 }
 
+
+
+/* ------------------------footer-------------------- */
+
+#footer {
+    background-color: #0846b2; /* Footer background color */
+    padding: 10px 0; /* Reduced padding for top and bottom to decrease footer height */
+    margin-top: 60px; /* Space above the footer */
+}
+
+#footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text inside the container */
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Center container horizontally */
+}
+
+#footer p {
+    color: #ffffff; /* Text color */
+    font-size: 18px; /* Increased font size */
+    margin: 0; /* Remove default margin */
+}

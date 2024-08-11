@@ -50,6 +50,10 @@
                     <a href="https://www.linkedin.com/in/arshiya-arora-43ab12259/">
                         <button class="links">LinkedIn</button>
                     </a>
+                    <a href="https://drive.google.com/file/d/1ORrpVgs8WrgUlo_-3Rs0c4XRFY7bhVQ8/view?usp=sharing">
+                        <button class="links">Resume</button>
+                    </a>
+                    
                 </div>
                 <div>
                     <a href="#contact"><button class="talk">Let's Talk  >></button></a>
@@ -122,16 +126,36 @@
         <div class="container">
             <div class="row1">
                 <h1 class="projectHeading"> <span class="textGray">Say Hi!</span> and Connect with Me</h1>
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit">Submit</button>
+                    <button type="submit" class="links">Submit</button>
                  </form>
                 <div class="contact-right"></div>
             </div>
         </div>
    </div>
-    
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyvodPy1Nowyb1xW6u30kX3sKhrpeSre4p6n4BW0IluHEDD8l6pJ5nxoZn4FlBX_RXY9g/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+
+<!-- -------------footer------->
+<div id="footer">
+    <div class="container">
+        <p>&copy; 2024 Arshiya Arora. All rights reserved.</p>
+    </div>
+</div>
+
 </body>
 </html>
