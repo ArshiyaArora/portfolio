@@ -265,3 +265,76 @@ textarea {
     font-size: 18px; /* Increased font size */
     margin: 0; /* Remove default margin */
 }
+
+
+/* Media Queries */
+
+/* For devices with max-width 768px (tablets) */
+@media (max-width: 768px) {
+    .name {
+        font-size: 24px;
+    }
+
+    nav ul li {
+        font-size: 15px;
+        margin: 8px 5px;
+    }
+
+    #heroSection {
+        font-size: 70px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    .projectHeading {
+        font-size: 50px;
+    }
+
+    .project-card {
+        max-width: 100%;
+    }
+
+    .aboutMe {
+        font-size: 20px;
+    }
+}
+
+/* For devices with max-width 480px (phones) */
+@media (max-width: 480px) {
+    .name {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        font-size: 14px;
+        margin: 5px 3px;
+    }
+
+    #heroSection {
+        font-size: 50px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    .projectHeading {
+        font-size: 40px;
+    }
+
+    .project-card {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .aboutMe {
+        font-size: 18px;
+    }
+
+    #contact button {
+        font-size: 20px;
+        width: auto;
+    }
+}
