@@ -53,7 +53,7 @@ nav ul li a:hover{
 }
 
 hr{
-    width:33.3%;
+    width:50%;
     height: 1px;
     background-color: black;
     margin: 70px 0;
@@ -67,7 +67,7 @@ hr{
 
 .text{
     margin:30px;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 0;
 }
 
@@ -111,7 +111,7 @@ hr{
 
 /* -----------------about-------------------- */
 #about{
-    padding: 80px 0;
+    padding-top: 90px;
 }
 
 .row{
@@ -137,3 +137,52 @@ hr{
     font-size: 25px;
     font-weight: 400;
 }
+
+/* -----------------projects------------------------ */
+
+.projectHeading{
+    font-weight: 500;
+    font-size: 70px;
+}
+
+.projects-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-card {
+    border: 1px solid #9CA3AF;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 690px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 10px;
+  }
+  
+  .project-card h2 {
+    margin-top: 0;
+  }
+  
+  .project-card p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .github-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #0070f3;
+    text-decoration: none;
+  }
+  
+  .github-link:hover {
+    text-decoration: underline;
+  }
+
+ .projectName{
+    font-size: 25px;
+    font-weight: 400;
+ }
+
